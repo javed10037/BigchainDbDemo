@@ -1,0 +1,10 @@
+var express = require('express');
+//console.log('there are error in this field');
+var rip = require('../app/controller/ripCtrl');
+var router = express.Router();
+router.post('/getAllInfoById', rip.getAllInfoById);
+router.post('/image_upload',rip.image_upload);
+router.post('/resetPasswordByOTP',rip.resetPasswordByOTP);
+router.post('/changePasswordByUserId',rip.changePasswordByUserId);
+router.post('/deleteUserBYUserID',rip.deleteUserBYUserID);
+module.exports = router;
